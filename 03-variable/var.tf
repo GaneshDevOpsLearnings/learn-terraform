@@ -1,8 +1,8 @@
 variable "sample"{
     default="hello world"
 }
-output "sampvar"{
-    data=var.sample
+output "out" {
+  value = var.sample
 }
 
 # List data type
