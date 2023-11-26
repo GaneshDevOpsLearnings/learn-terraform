@@ -1,5 +1,8 @@
 data "aws_ami" "example" {
   most_recent      = true
-  name_regex       = "^myami-\\d{3}"
-  owners           = ["self"]
+  owners           = ["245745413231"]
+}
+
+output "ami_id" {
+  value = data.aws_ami.ami_id  
 }
