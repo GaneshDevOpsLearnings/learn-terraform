@@ -24,7 +24,7 @@ output "publicip" {
 variable "instance_desc" {
   default={
     cart={
-        instance_type = "t3.mini"
+        instance_type = "t3.small"
         Name = "cart"
     }
     catalogue={
