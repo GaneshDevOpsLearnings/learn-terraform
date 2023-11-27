@@ -16,7 +16,7 @@ resource "aws_instance" "ec2" {
 
 output "publicip" {
     value = {
-        for k,v in aws_aws_instance.ec2 : k => v.public_ip
+        for k,v in aws_instance.ec2 : k => v.public_ip
     }
   
 }
