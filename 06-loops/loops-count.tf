@@ -15,3 +15,8 @@ resource "aws_instance" "ec2" {
     Name = "catalogue"
   }  
 }
+
+output "instance_details" {
+  value = aws_instance.ec2.*.public_ip
+  
+}
